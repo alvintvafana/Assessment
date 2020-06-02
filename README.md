@@ -12,11 +12,11 @@ The entry project for the Catalogue and the Subscription service is the Api proj
  - folder to be in : Assessment.Subscription.Api 
  - command to run : dotnet run
  - swagger url : [http://localhost:5020/swagger/index.html](http://localhost:5020/swagger/index.html)
- - 
+ 
  **Identity server**
  - in the root folder of the service run : dotnet run
  - To register a new user : [http://localhost:5010/](http://localhost:5010/)
- - 
+ 
 **Api Gateway**
  - in the root folder of the service run : dotnet run
  - The Api Gateway runs from :http://localhost:5005
@@ -29,7 +29,7 @@ I followed a microservice type of architecture resulting in 4 services.
  - **Assessment.Subscription**: This is an internal service, to be hosted behind a firewall and it caters to when the user wants to subscribe or unsubscribe.
  - **Assessment.gateway** : This is how the outside world can talk to our internal service. It checks if the user has been authenticated before letting them proceed.
  - **Assessment.identityserver4** : This caters for all our authentication needs.
- - 
+ 
 ## Concepts and patterns used
  - I made use of DDD, which has the benefit of having all your logic sit
    in one place rather than scatted throughout your system.
